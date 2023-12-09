@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0 0 0;
+    justify-content: center;
+    align-items: center;
+    max-width: 348px;
+}
+
+.search-input {
+    flex: 1 1 100%;
+    padding: 10px;
+    background: #E7E9EB;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+}
+
+.search-input input {
+    padding: 8px 12px;
+    border-radius: 5px 0px 0px 5px;
+    outline: unset;
+    border: unset;
+    height: 54px;
+    font-size: 16px;
+    background: #fff;
+    flex: 1 1 calc(100% - 54px);
+}
+
+.search-input .add-button {
+    padding: 0;
+    margin: 0;
+    border: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 54px;
+    height: 54px;
+    border-radius: 0px 5px 5px 0px;
+    color: #04AA6D;
+    background: #fff;
+    flex: 1 1 54px;
+}
+
+.search-input .add-button svg {
+    width: 54px;
+    height: 54px;
+}
+
+.search-result-list {
+    flex: 1 1 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border: 10px solid #E7E9EB;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #E7E9EB;
+}
+
+.search-result-list .activity {
+    flex: 1 1 100%;
+    display: flex;
+    padding: 0;
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.search-result-list .activity .activity-description {
+    padding: 10px 15px 6px 15px;
+    flex: 1 1 auto;
+}
+
+.search-result-list .activity .activity-description .activity-name {
+    font-size: 18px;
+}
+
+.search-result-list .activity .activity-description .activity-tags {
+    margin-top: 2px;
+}
+
+.search-result-list .activity .activity-description .activity-tags span {
+    color: #0090E2;
+    font-size: 18px;
+}
+
+.search-result-list .activity .activity-detail-button {
+    padding: 0;
+    background: #04AA6D;
+    color: #fff;
+    border: unset;
+    outline: unset;
+    width: 54px;
+    border-radius: 0px 5px 5px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-result-list .activity .activity-detail-button svg {
+    width: 24px;
+    height: 24px;
+}
+
+.search-result-list .activity:last-child {
+    margin-bottom: 0;
+}
